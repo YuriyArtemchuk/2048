@@ -1,167 +1,462 @@
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(240, 222, 198);
+@-webkit-keyframes border-light {
+  0% {
+    -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+            box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  }
+  25% {
+    -webkit-box-shadow: 0px 0px 10px rgb(200, 255, 47);
+            box-shadow: 0px 0px 10px rgb(200, 255, 47);
+  }
+  75% {
+    -webkit-box-shadow: 0px 0px 20px rgb(255, 47, 213);
+            box-shadow: 0px 0px 20px rgb(255, 47, 213);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+            box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  }
 }
-
-/* .nav-box {
-    background-color: rgb(240, 222, 198);
-
-} */
+@keyframes border-light {
+  0% {
+    -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+            box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  }
+  25% {
+    -webkit-box-shadow: 0px 0px 10px rgb(200, 255, 47);
+            box-shadow: 0px 0px 10px rgb(200, 255, 47);
+  }
+  75% {
+    -webkit-box-shadow: 0px 0px 20px rgb(255, 47, 213);
+            box-shadow: 0px 0px 20px rgb(255, 47, 213);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+            box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  }
+}
+@-webkit-keyframes border-light-2 {
+  0% {
+    -webkit-box-shadow: 0px 0px 5px rgb(47, 255, 252);
+            box-shadow: 0px 0px 5px rgb(47, 255, 252);
+  }
+  25% {
+    -webkit-box-shadow: 0px 0px 3px rgb(200, 255, 47);
+            box-shadow: 0px 0px 3px rgb(200, 255, 47);
+  }
+  75% {
+    -webkit-box-shadow: 0px 0px 7px rgb(255, 47, 213);
+            box-shadow: 0px 0px 7px rgb(255, 47, 213);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 5px rgb(47, 255, 252);
+            box-shadow: 0px 0px 5px rgb(47, 255, 252);
+  }
+}
+@keyframes border-light-2 {
+  0% {
+    -webkit-box-shadow: 0px 0px 5px rgb(47, 255, 252);
+            box-shadow: 0px 0px 5px rgb(47, 255, 252);
+  }
+  25% {
+    -webkit-box-shadow: 0px 0px 3px rgb(200, 255, 47);
+            box-shadow: 0px 0px 3px rgb(200, 255, 47);
+  }
+  75% {
+    -webkit-box-shadow: 0px 0px 7px rgb(255, 47, 213);
+            box-shadow: 0px 0px 7px rgb(255, 47, 213);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 5px rgb(47, 255, 252);
+            box-shadow: 0px 0px 5px rgb(47, 255, 252);
+  }
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgb(240, 222, 198);
+}
 
 .main-section {
-    /* background-color: rgb(240, 222, 198); */
-    padding-top: 20px;
+  /* background-color: rgb(240, 222, 198); */
+  padding-top: 50px;
 }
 
-#about {
-    border: 2px solid silver;
-    border-radius: 30px;
-    width: 90%;
-    margin-left: 5%;
-    /* background-color: rgba(255, 166, 0, 0.648); */
-    background: whitesmoke;
-    box-shadow: 0px 0px 15px rgb(47, 255, 252);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    padding: 20px;
-    margin-top: 30px;
-    
+.animation-block {
+  border: 2px solid silver;
+  border-radius: 30px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+          box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.animation-block:hover {
+  -webkit-animation-name: border-light;
+          animation-name: border-light;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 #game-description {
-    border: 2px solid silver;
-    border-radius: 30px;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* background-color: rgba(255, 166, 0, 0.648); */
-    background: whitesmoke;
-
-    box-shadow: 0px 0px 15px rgb(47, 255, 252);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    padding: 20px;
+  border: 2px solid silver;
+  border-radius: 30px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+          box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#game-description:hover {
+  -webkit-animation-name: border-light;
+          animation-name: border-light;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
-
-img {
-    padding: 10px;
-    background-color: darkcyan;
-    margin: 20px;
-    text-align: center;
-    margin-bottom: 100px;
-
-}
 #gallery {
-    border: 2px solid silver;
-    border-radius: 30px;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    background: whitesmoke;
-    box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  border: 2px solid silver;
+  border-radius: 30px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+          box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#gallery:hover {
+  -webkit-animation-name: border-light;
+          animation-name: border-light;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
 
+.gallery-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.img-div {
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+  margin: 5px;
+  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.img-div img {
+  padding: 10px;
+  background-color: darkcyan;
+  margin: 0px;
+  text-align: center;
+  width: 80%;
+  margin-left: 30px;
+}
+
+.video-div {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.img-text {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin-left: 30px;
+  bottom: 0px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+  padding: 20px 0px;
 }
 
 nav {
-    border: 2px solid silver;
-    /* border-radius: 30px; */
-    background: rgb(235, 229, 229);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-  
-  
-    
+  border: 2px solid silver;
+  background: rgb(235, 229, 229);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
 }
-
 nav li {
-    display: inline-block;
-    text-align: center;
-    padding-left: 25px;
-    margin-bottom: -20px;
-    
-  }
-
-
-
-li a {
-    display: flexbox;
-    width:auto;
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: -10px;
-    
-  }
+  display: inline-block;
+  text-align: center;
+  padding: 0px 40px;
+  margin-bottom: -20px;
+}
+nav li:hover {
+  /* background-color: white; */
+  color: cornflowerblue;
+}
+nav li a {
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: -10px;
+}
 
 /* Change the link color on hover */
 li:hover {
-    /* background-color: white; */
-    color:cornflowerblue;
-  }
+  /* background-color: white; */
+  color: cornflowerblue;
+}
 
 li a.active {
   background-color: white;
   font-style: bold;
 }
 
-.contact-form {
-    border: 1px solid silver;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 100px auto;
-    margin-top: 30px;
-    width: 600px;
-    background: whitesmoke;
-    /* background-color: rgba(255, 166, 0, 0.648); */
+.container-fluid {
+  max-width: 90%;
+}
 
-    box-shadow: 0px 0px 15px rgb(47, 255, 252);
-    text-align: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+.block-form {
+  border: 2px solid silver;
+  border-radius: 30px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+          box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 20px;
+  padding: 30px;
+  margin: 100px auto;
+  text-align: left;
+}
+.block-form:hover {
+  -webkit-animation-name: border-light;
+          animation-name: border-light;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.contact-form {
+  margin: 30px;
 }
 
 input {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border: 2px solid silver;
-    border-radius: 4px;
-    width: 400px;
-    box-shadow: 0px 0px 5px rgb(47, 255, 252);
-    padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 2px solid silver;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px rgb(47, 255, 252);
+          box-shadow: 0px 0px 5px rgb(47, 255, 252);
+  padding: 5px;
+  width: 400px;
 }
+input:hover {
+  -webkit-animation-name: border-light-2;
+          animation-name: border-light-2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 textarea {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border: 2px solid silver;
-    border-radius: 4px;
-    box-shadow: 0px 0px 5px rgb(47, 255, 252);
-    padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 2px solid silver;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 5px rgb(47, 255, 252);
+          box-shadow: 0px 0px 5px rgb(47, 255, 252);
+  padding: 5px;
+}
+textarea:hover {
+  -webkit-animation-name: border-light-2;
+          animation-name: border-light-2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.contact-form label {
+  margin: 5px;
+}
+
+button {
+  width: 120px;
+  margin-top: 10px;
+}
+
+button[type=reset] {
+  margin-left: 10px;
 }
 
 footer {
-    border: 2px solid silver;
-    background: whitesmoke;
-    /* background-color: rgb(240, 222, 198); */
+  border: 2px solid silver;
+  background: whitesmoke;
+  /* background-color: rgb(240, 222, 198); */
 }
 
 .info-footer {
-    padding: 50px;
-    text-align: center;
+  padding: 50px;
+  text-align: center;
 }
 
-
-div h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 20px;
-    text-align: center;
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 20px;
+  text-align: center;
 }
 
+.game-block {
+  border: 2px solid silver;
+  border-radius: 30px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 0px 15px rgb(47, 255, 252);
+          box-shadow: 0px 0px 15px rgb(47, 255, 252);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  padding: 20px;
+  padding: 30px;
+  margin: 100px auto;
+  text-align: left;
+  margin-left: 5%;
+  background-color: rgba(229, 246, 220, 0.908);
+}
+.game-block:hover {
+  -webkit-animation-name: border-light;
+          animation-name: border-light;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+#gameField {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(101, 99, 99);
+  border: 1px solid #000;
+  padding: 0;
+}
+
+.game-div {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+
+.game-div img {
+  width: 100%;
+  height: auto;
+}
+
+.button-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.time-game {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 16vw;
+  }
+  nav {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  nav {
+    font-size: 18px;
+  }
+  nav li {
+    padding: 0px 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav li {
+    padding: 0px 20px;
+  }
+  .gallery-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img-div img {
+    margin: auto;
+    max-width: 60%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav li {
+    display: block;
+    margin: 10px;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  input {
+    width: 100%;
+  }
+}
